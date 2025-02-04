@@ -50,6 +50,7 @@ void randData(double *arr, int N, int M){
 
 void findRowSum(const double *arr,double *sum,int N,int M) {
     for(int i=0 ; i<N ; i++) {
+        sum[j] = 0;
         for(int j=0 ; j<M ; j++) sum[i] += *(arr+(i*M)+j);
     }
 }
